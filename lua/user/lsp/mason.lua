@@ -7,6 +7,9 @@ local servers = {
 	"bashls",
 	"jsonls",
 	"yamlls",
+  "ansiblels",
+  "terraform_lsp",
+  "gopls",
 }
 
 local settings = {
