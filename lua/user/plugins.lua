@@ -66,7 +66,9 @@ return packer.startup(function(use)
   use { "lambdalisue/suda.vim", commit = "2fc45dc4bcafb245b613ebd6847a244924735cc6" }
   use { "turbio/bracey.vim", commit = "4e1a22acc01787814819df1057d039d4ecf357eb"}
   use { "907th/vim-auto-save", commit = "2e3e54ea4c0fc946c21b0a4ee4c1c295ba736ee8" }
-
+  use { "phaazon/hop.nvim", commit = "90db1b2c61b820e230599a04fedcd2679e64bd07" }
+  use { "jamessan/vim-gnupg", commit = "f9b608f29003dfde6450931dc0f495a912973a88" }
+  use { 'michaelb/sniprun',commit = "79806dad094770a1563ac0227c9692f7592df744", run = 'bash ./install.sh'}
   -- Colorschemes
   use { "folke/tokyonight.nvim", commit = "66bfc2e8f754869c7b651f3f47a2ee56ae557764" }
   use { "lunarvim/darkplus.nvim", commit = "13ef9daad28d3cf6c5e793acfc16ddbf456e1c83" }

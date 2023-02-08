@@ -54,6 +54,10 @@ keymap("v", ">", ">gv", opts)
 
 -- Plugins --
 
+-- Hop
+keymap("n", "s", ":HopChar2<cr>", { silent = true })
+keymap("n", "S", ":HopWord<cr>", { silent = true })
+
 -- NvimTree
 keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 
