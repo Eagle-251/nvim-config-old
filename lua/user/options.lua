@@ -1,3 +1,11 @@
+-- sonokai options
+
+-- vim.g.sonokai_style = 'espresso'
+vim.g.sonokai_style = 'maia'
+vim.g.sonokai_better_performance = 1
+
+vim.g.material_style = 'deep_ocean'
+
 vim.g.suda_smart_edit = 1                       -- tells suda to ask for a password if it detects read-only files
 vim.g.bracey_eval_on_save = 1
 vim.opt.backup = false                          -- creates a backup file
