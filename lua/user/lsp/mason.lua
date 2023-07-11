@@ -1,5 +1,6 @@
 local servers = {
 	"sumneko_lua",
+  	"perlnavigator",
 	"cssls",
 	"html",
 	"tsserver",

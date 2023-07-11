@@ -43,6 +43,9 @@ keymap("n", "<leader>bq", "<cmd>Bdelete!<CR>", opts)
 -- Better paste
 keymap("v", "p", '"_dP', opts)
 
+-- Copy full path to clipboard
+keymap("n", "cp", ":let @+ = expand('%:p')<CR>", { silent = true })
+
 -- Insert --
 -- Press jk fast to enter
 keymap("i", "jk", "<ESC>", opts)

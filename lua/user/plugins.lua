@@ -70,28 +70,7 @@ return packer.startup(function(use)
 	use({ "phaazon/hop.nvim", commit = "90db1b2c61b820e230599a04fedcd2679e64bd07" })
 	use({ "jamessan/vim-gnupg", commit = "f9b608f29003dfde6450931dc0f495a912973a88" })
 	use({ "michaelb/sniprun", commit = "79806dad094770a1563ac0227c9692f7592df744", run = "bash ./install.sh" })
-
-	use({
-		"nvim-neorg/neorg",
-		ft = "norg",
-		after = "nvim-treesitter", -- You may want to specify Telescope here as well
-		config = function()
-			require("neorg").setup({
-				load = {
-					["core.defaults"] = {}, -- Loads default behaviour
-					["core.highlights"] = {},
-					["core.norg.concealer"] = {}, -- Adds pretty icons to your documents
-					["core.norg.dirman"] = { -- Manages Neorg workspaces
-						config = {
-							workspaces = {
-								notes = "~/neorg",
-							},
-						},
-					},
-				},
-			})
-		end,
-	})
+  use ({"wakatime/vim-wakatime", commit = "ee4ab57adf62a309aeef383a2da23b6e48e5ae50"})
 
 	-- Colorschemes
 	use({ "folke/tokyonight.nvim", commit = "66bfc2e8f754869c7b651f3f47a2ee56ae557764" })
@@ -100,6 +79,8 @@ return packer.startup(function(use)
 	use({ "tanvirtin/monokai.nvim", commit = "b8bd44d5796503173627d7a1fc51f77ec3a08a63" })
 	use({ "sainnhe/sonokai", commit = "c55985d5df53751a44fc532a53bed3be9f3b0d14" })
 	use({ "marko-cerovac/material.nvim", commit = "c5f6a24d526a8ddcd651c5d1291de89a51f923fa" })
+        use({ "catppuccin/nvim", commit = "51961da41e8189ca6f9ed73f37dfa83087b4e65c" })
+        use({ "xiyaowong/transparent.nvim", commit = "f6a0f8387fbea5fbc2b78137444a9de4fdd02459" })
 
 	-- cmp plugins
 	use({ "hrsh7th/nvim-cmp", commit = "b0dff0ec4f2748626aae13f011d1a47071fe9abc" }) -- The completion plugin

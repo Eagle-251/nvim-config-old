@@ -1,6 +1,3 @@
--- sonokai options
-
--- vim.g.sonokai_style = 'espresso'
 vim.g.sonokai_style = 'maia'
 vim.g.sonokai_better_performance = 1
 

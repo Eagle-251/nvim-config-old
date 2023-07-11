@@ -77,3 +77,14 @@ vim.api.nvim_create_autocmd({"BufRead", "BufNewFile"}, {
   command = "set filetype=yaml.ansible",
 })
 
+
+vim.api.nvim_create_autocmd({"BufWritePost"}, {
+  pattern = "~/.local/share/chezmoi/*",
+  command = "chezmoi apply --source-path '%'",
+})
+
+-- vim.api.nvim_create_autocmd({"ColorScheme"}, {
+--   pattern = "*",
+--   command = "hi Normal guibg=none",
+-- })
+
